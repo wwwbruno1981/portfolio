@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 const navigation = [
     { name: 'Inicio', href: '/' },
-    { name: 'Tecnologias do Site', href: '/site' },
     { name: 'Curriculo', href: '/curriculo' },
+    { name: 'Tecnologias empregadas neste static-site', href: '/site' },
     
   ]
   
@@ -41,15 +41,13 @@ const navigation = [
                   </div>
 
                   <div className="flex items-center justify-between h-16">
-                    {/* Whatzapp button */}
+                    {/* Download button */}
                     <div className="flex items-center">
                      <div className="flex-shrink-0">
-                       <a href="#"> <img
-                          className="h-8 w-8 mx-auto"
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoU04QfrAKPPZaBAQZb7zkvCNmvMf7HcxLXw&usqp=CAU"
-                          alt="Workflow"
-                        /></a>
-                      </div>
+                     <a href="https://drive.google.com/file/d/1L8CFVpwW4bZmf59eUQI7tIglWT18rovh/view?usp=sharing" 
+                        class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                        Baixar Curriculo</a>
+                     </div>
                     </div>
                   </div>
 

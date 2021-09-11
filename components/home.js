@@ -24,8 +24,8 @@ export default function Index({posts}) {
         <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/1">
   <img
      className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-     src="/assets/bgBTC.jpg"
-     alt=""
+     src="/assets/bgBTC.png"
+     alt="imagem"
      width={1000} 
      height={1000}
     /> 

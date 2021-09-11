@@ -89,11 +89,7 @@ export default function Curriculo() {
                     <PaperClipIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
                     <span className="ml-2 flex-1 w-0 truncate">Possuo bom relacionamento interpessoal e dedicação às atividades de trabalho.</span>
                   </div>
-                  <div className="ml-4 flex-shrink-0">
-                    <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                      Download
-                    </a>
-                  </div>
+                 
                 </li>
               </ul>
             </dd>
@@ -101,6 +97,11 @@ export default function Curriculo() {
         </dl>
       </div>
     </div>
+    <div className="text-center pt-5 pb-5">
+  
+      <a href="https://drive.google.com/file/d/1L8CFVpwW4bZmf59eUQI7tIglWT18rovh/view?usp=sharing" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">Baixar Curriculo</a>
+
+    </div>            
     <Footer />
     </>
   )
