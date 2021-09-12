@@ -98,9 +98,8 @@ export default function Curriculo() {
       </div>
     </div>
     <div className="text-center pt-5 pb-5">
-  
-      <a href="https://drive.google.com/file/d/1L8CFVpwW4bZmf59eUQI7tIglWT18rovh/view?usp=sharing" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">Baixar Curriculo</a>
-
+       <a href="https://drive.google.com/file/d/1L8CFVpwW4bZmf59eUQI7tIglWT18rovh/view?usp=sharing" 
+       class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">Baixar Curriculo</a>
     </div>            
     <Footer />
     </>

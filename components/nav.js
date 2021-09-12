@@ -3,9 +3,9 @@ import {MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 
 const navigation = [
-    { name: 'Inicio', href: '/' },
-    { name: 'Curriculo', href: '/curriculo' },
-    { name: 'Tecnologias empregadas neste static-site', href: '/site' },
+    { name: 'Inicio', href: '/'},
+    { name: ' Curriculo', href: '/curriculo' },
+    { name: ' Tecnologias empregadas neste static-site', href: '/site' },
     
   ]
   

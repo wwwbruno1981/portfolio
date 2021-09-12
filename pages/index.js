@@ -35,7 +35,7 @@ export default function Index() {
     <div className="bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
-          <h2 className="text-5xl font-extrabold text-center text-gray-900">Tipos de Home Pages</h2>
+          <h2 className="text-5xl font-extrabold text-center text-gray-900">Tipos de Home Pages (em construção)</h2>
 
           <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
             {callouts.map((callout) => (
