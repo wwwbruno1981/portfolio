@@ -1,13 +1,14 @@
 import Home from '../components/home'
 import Footer from '../components/footer'
+import Barra from '../components/barra'
 
 const callouts = [
   {
-    name: 'Desk and Office',
-    description: 'Work from home accessories',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    href: '#',
+    name: 'styles',
+    description: 'Landing Page',
+    imageSrc: '/assets/bgTECS.jpg',
+    imageAlt: 'imagem de landingpage.',
+    href: '/landingpage',
   },
   {
     name: 'Self-Improvement',
@@ -34,8 +35,8 @@ export default function Index() {
 
     <div className="bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
-          <h2 className="text-5xl font-extrabold text-center text-gray-900">Tipos de Home Pages (em construção)</h2>
+        <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-10 lg:max-w-none">
+         <Barra />
 
           <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
             {callouts.map((callout) => (
@@ -53,7 +54,7 @@ export default function Index() {
                     {callout.name}
                   </a>
                 </h3>
-                <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+                <p className="text-3xl font-semibold text-gray-900">{callout.description}</p>
               </div>
             ))}
           </div>
