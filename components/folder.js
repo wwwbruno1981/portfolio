@@ -1,44 +1,58 @@
-const ids = [
-    {
-        id:'01',
-       img: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-      name: 'Certo',
-      description: 'Get a better understanding of where your traffic is coming from.',
-      alt: 'Man looking at item at a store',
-      
-    },
+import Barra from './barra';
+
+const callouts = [
+  {
+    name: 'Style',
+    description: 'Landing Page',
+    imageSrc: '/assets/bgTECS.jpg',
+    imageAlt: 'imagem de landingpage.',
+    href: '/landingpage',
+  },
+  {
+    name: 'Style',
+    description: 'Ecommerce',
+    imageSrc: '/assets/bgECO.png',
+    imageAlt: 'imafem de ecommerce.',
+    href: '/ecommerce',
+  },
+  {
+    name: 'Style',
+    description: 'Em construção',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
+    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+    href: '#',
+  },
 ]
 function Folder() {
         return (
-        <div class="flex flex-wrap md:flex-wrap justify-center md:justify-center">
-                    
-            {ids.map((item) => (
-                  
-                  <div class="my-2 md:my-2 mx-2 max-w-md bg-white rounded-xl shadow-2xl overflow-hidden md:max-w-2xl md:w-80  border-2 border-red-700 border-opacity-75 md:border-opacity-50">
-                   <div class="md:flex-wap">
-                     <div class="md:flex-shrink-0">
-                       <img 
-                       key={item.id}  
-                       src={item.img}
-                       alt={item.alt}
-                       class="h-48 w-full object-cover md:w-full md:h-48"/>
-                       </div>
-                     <div class="p-8">
-                       <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{item.name}</div>
-                       <a href={item.href} class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{item.description}</a>
-                       <button
-                           type="submit"
-                           className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 my-5 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-500 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                         >
-                           <span className="absolute left-0 inset-y-0 flex items-center pl-3">
-                           </span>
-                           Sign in
-                         </button> </div>
-                   </div>
+          <div className="bg-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-10 lg:max-w-none">
+             <Barra />
+    
+              <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
+                {callouts.map((callout) => (
+                  <div key={callout.name} className="group relative">
+                    <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                      <img
+                        src={callout.imageSrc}
+                        alt={callout.imageAlt}
+                        className="w-full h-full object-center object-cover"
+                      />
+                    </div>
+                    <h3 className="mt-6 text-sm text-gray-500">
+                      <a href={callout.href}>
+                        <span className="absolute inset-0" />
+                        {callout.name}
+                      </a>
+                    </h3>
+                    <p className="text-3xl font-semibold text-gray-900">{callout.description}</p>
                   </div>
-                  
-              ))}              
-        </div>   
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       )
     }
 export default Folder
