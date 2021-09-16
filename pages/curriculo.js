@@ -9,7 +9,7 @@ export default function Curriculo() {
     <div className="bg-white-400 shadow overflow-hidden sm:rounded-lg">
       <div className=" text-center px-4 py-5 sm:px-6">
         <h3 className="text-3xl leading-6 font-medium text-gray-900">Bruno da Conceição</h3>
-        <p className="text-center text-2xl mt-1 text-sm text-gray-500">Resindente em: Nova Aurora - Belford Roxo - RJ</p>
+        <p className="text-center text-2xl mt-1 text-sm text-gray-500">Residente em: Nova Aurora - Belford Roxo - RJ</p>
         <p className="text-center text-2xl mt-1  text-sm text-gray-500">Contato wwwbrruno@gmail.com - (21) 99255 6460 p/recados (21) 99423 1066</p>
      
       </div>
