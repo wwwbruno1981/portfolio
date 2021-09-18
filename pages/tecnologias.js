@@ -42,15 +42,14 @@ import Footer from '../components/footer'
             icon: '/icon/iconVERCEL.png',
           },
         ]
-function Site() {
+function Tecnologias() {
     return (
        <>
         <Nav />  
 <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Atualizado em 10/09/2021</h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Tecnologias para FrontEnd (Responsivo)
           </p>
          
@@ -76,7 +75,7 @@ function Site() {
         </div>
         <div className="lg:text-center">
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Tecnologias para Hospedagem
+            Tecnologias para deployment
           </p>
          </div>
          <div className="mt-10">
@@ -103,4 +102,4 @@ function Site() {
       </>
     )
 }
-export default Site
+export default Tecnologias

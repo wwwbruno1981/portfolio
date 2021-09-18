@@ -1,4 +1,3 @@
-import Barra from './barra';
 
 const callouts = [
   {
@@ -17,20 +16,20 @@ const callouts = [
   },
   {
     name: 'Home Page Style',
-    description: 'Em construção',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-    href: '#',
+    description: 'Showcase',
+    imageSrc: '/assets/bgROU.png',
+    imageAlt: 'Imagem de showcase',
+    href: '/showcase',
   },
   
 ]
 function Folder() {
         return (
           <div className="bg-gray-100">
-            <div className="sm:text-center lg:text-center">
+            <div className="pt-5 sm:text-center lg:text-center">
               <h1 className="text-4xl tracking-tight font-sans text-gray-900 sm:text-5xl md:text-5xl">
                 <span className="block xl:inline">Home Pages</span>{' '}
-                <span className="block text-indigo-600 xl:inline">Technology.</span>
+                <span className="block text-indigo-600 xl:inline">Technology</span>
               </h1>
               </div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
